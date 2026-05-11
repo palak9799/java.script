@@ -1,20 +1,20 @@
 {
     "configurations": [
-        
         {
-            "name": "Electron Main",
-            "program": "${workspaceFolder}/main.js",
-            "request": "launch",
-            "runtimeExecutable": "electron",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
-            "type": "node"
+            "name": "Python Debugger: Remote Attach",
+            "type": "debugpy",
+            "request": "attach",
+            "connect": {
+                "host": "ddc",
+                "port": 5678
+            },
+            "pathMappings": [
+                {
+                    "localRoot": "${workspaceFolder}",
+                    "remoteRoot": "."
+                }
+            ]
         },
-
-        
-
-
         {
             "name": "Attach",
             "port": 9229,
@@ -24,19 +24,11 @@
             ],
             "type": "node"
         }
-
-
-
-
-
-
-
-
     ]
 error there is no code to suggest
 }
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": []
+// Use IntelliSense to learn about possible attributes.
+// Hover to view descriptions of existing attributes.
+// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+"version": "0.2.0",
+"configurations": []
