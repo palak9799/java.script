@@ -1,0 +1,10 @@
+a=12;
+b= "palak";
+c= 23.12;
+d=true;
+e='q';
+console.log(typeof(a));
+console.log(typeof(b));
+console.log(typeof(c));
+console.log(typeof(d));
+console.log(typeof(e));
